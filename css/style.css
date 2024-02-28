@@ -1,0 +1,266 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "Title Title Title" "Welc Welc Welc" "info1 info1 img1" "img2 info2 info2" "info3 info3 img3" "img4 info4 info4" "info5 info5 img5" "img6 info6 info6" "contacto contacto contacto";
+}
+
+.Title {
+  background-image: url("/imgs/IMG_8179.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+  grid-area: Title;
+  color: rgb(251, 250, 252);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: wavy;
+}
+
+.Title1 {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 27px;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.cont-welc {
+  background-color: rgba(49, 48, 48, 0.8);
+  padding-right: 25px;
+  padding-left: 25px;
+  border-radius: 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Welc {
+  background-image: url("/imgs/IMG2.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  font-size: 21px;
+  grid-area: Welc;
+  height: 700px;
+}
+
+.info1 {
+  grid-area: info1;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.info2 {
+  grid-area: info2;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.info3 {
+  grid-area: info3;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img4 {
+  grid-area: img4;
+}
+
+.info4 {
+  grid-area: info4;
+}
+
+.info5 {
+  grid-area: info5;
+}
+
+.img5 {
+  grid-area: img5;
+}
+
+.img6 {
+  grid-area: img6;
+}
+
+.info6 {
+  grid-area: info6;
+}
+
+.contacto {
+  grid-area: contacto;
+  background-color: rgb(143, 123, 150);
+}
+
+#ot {
+  color: rgb(218, 203, 236);
+}
+
+img {
+  border-radius: 10%;
+  padding: 20px;
+  transition: transform 0.7s ease;
+}
+
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.info1, .img1 {
+  background-color: rgb(143, 123, 150);
+}
+
+.info2, .img2 {
+  background-color: rgb(126, 107, 129);
+}
+
+.info3, .img3 {
+  background-color: rgb(143, 123, 150);
+}
+
+.info4, .img4 {
+  background-color: rgb(126, 107, 129);
+}
+
+.info5, .img5 {
+  background-color: rgb(143, 123, 150);
+}
+
+.info6, .img6 {
+  background-color: rgb(126, 107, 129);
+}
+
+.info1, .info2, .info3, .info4, .info5, .info6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  font-size: 20px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  z-index: 1;
+}
+
+#nav34 {
+  background-color: rgb(26, 25, 25);
+  color: white;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+
+a:hover {
+  color: rgb(143, 142, 145);
+  cursor: pointer;
+}
+
+ul {
+  border-radius: 10%;
+  margin-top: -3px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 93%;
+  list-style-type: disc;
+}
+
+li, a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: 0 auto;
+  background: #c8b1ce;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #69447a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
