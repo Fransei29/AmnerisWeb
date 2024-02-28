@@ -263,4 +263,25 @@ a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  body, html {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  .Title, .Welc {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  img, .fr {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .desktop {
+    height: 20%;
+  }
+  .contacto {
+    padding: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
